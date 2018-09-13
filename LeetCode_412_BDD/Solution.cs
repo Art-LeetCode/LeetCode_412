@@ -35,7 +35,18 @@ namespace LeetCode_412_BDD
         /// <returns></returns>
         public IList<string> FizzBuzz(int num)
         {
-            var result = new[] { "1", "2" };
+            var result = new string[num];
+            for (int i = 0; i < num; i++)
+            {
+                if ((i + 1) % 3 == 0)
+                {
+                    result[i] = "Fizz";
+                }
+                else
+                {
+                    result[i] = (i + 1).ToString();
+                }
+            }
 
             return result;
         }
