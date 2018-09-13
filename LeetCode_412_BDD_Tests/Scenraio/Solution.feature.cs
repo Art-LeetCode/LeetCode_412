@@ -93,12 +93,12 @@ namespace LeetCode_412_BDD_Tests.Scenraio
         public virtual void 呼叫GetResult方法並傳入2結果應為長度2的字串集合()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入2，結果應為長度2的字串集合", null, ((string[])(null)));
-#line 21
+#line 4
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 22
+#line 6
  testRunner.Given("陣列長度輸入 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
-#line 23
+#line 7
  testRunner.When("呼叫GetResult方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "當");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -107,7 +107,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "1"});
             table1.AddRow(new string[] {
                         "2"});
-#line 24
+#line 8
  testRunner.Then("結果為", ((string)(null)), table1, "那麼");
 #line hidden
             this.ScenarioCleanup();

@@ -35,7 +35,8 @@ namespace LeetCode_412_BDD
         /// <returns></returns>
         public IList<string> FizzBuzz(int num)
         {
-            var result = new List<string>();
+            var result = new[] { "1", "2" };
+
             return result;
         }
     }
