@@ -57,12 +57,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extension\MyExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scenraio\Solution.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Solution.feature</DependentUpon>
     </Compile>
+    <Compile Include="Steps\FizzBuzzLibTestsSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
