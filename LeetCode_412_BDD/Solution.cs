@@ -43,6 +43,10 @@ namespace LeetCode_412_BDD
                 {
                     result[i] = "Fizz";
                 }
+                else if (currectNumber % 5 == 0)
+                {
+                    result[i] = "Buzz";
+                }
                 else
                 {
                     result[i] = currectNumber.ToString();
