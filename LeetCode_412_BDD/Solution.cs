@@ -38,13 +38,14 @@ namespace LeetCode_412_BDD
             var result = new string[num];
             for (int i = 0; i < num; i++)
             {
-                if ((i + 1) % 3 == 0)
+                var currectNumber = i + 1;
+                if (currectNumber % 3 == 0)
                 {
                     result[i] = "Fizz";
                 }
                 else
                 {
-                    result[i] = (i + 1).ToString();
+                    result[i] = currectNumber.ToString();
                 }
             }
 
