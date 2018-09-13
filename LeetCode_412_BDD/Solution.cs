@@ -36,23 +36,22 @@ namespace LeetCode_412_BDD
         public IList<string> FizzBuzz(int num)
         {
             var result = new string[num];
-            for (int i = 0; i < num; i++)
+            for (var i = 0; i < num; i++)
             {
+                var tmp = string.Empty;
                 var currectNumber = i + 1;
-                if (currectNumber % 3 == 0)
-                {
-                    result[i] = "Fizz";
-                }
-                else if (currectNumber % 5 == 0)
-                {
-                    result[i] = "Buzz";
-                }
-                else
-                {
-                    result[i] = currectNumber.ToString();
-                }
-            }
 
+                if (currectNumber % 3 == 0)
+                    tmp = "Fizz";
+
+                if (currectNumber % 5 == 0)
+                    tmp += "Buzz";
+
+                if (tmp == string.Empty)
+                    tmp = currectNumber.ToString();
+
+                result[i] = tmp;
+            }
             return result;
         }
     }
