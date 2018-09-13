@@ -172,6 +172,58 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入15，結果應無長度15的字串集合，三的倍數應為Fizz，五的倍數應為Buzz，滿足兩者應為FizzBuzz")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "FizzBuzzLibTests")]
+        public virtual void 呼叫GetResult方法並傳入15結果應無長度15的字串集合三的倍數應為Fizz五的倍數應為Buzz滿足兩者應為FizzBuzz()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入15，結果應無長度15的字串集合，三的倍數應為Fizz，五的倍數應為Buzz，滿足兩者應為FizzBuzz", null, ((string[])(null)));
+#line 32
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 33
+ testRunner.Given("陣列長度輸入 15", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
+#line 34
+ testRunner.When("呼叫GetResult方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "當");
+#line hidden
+            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                        "value"});
+            table4.AddRow(new string[] {
+                        "1"});
+            table4.AddRow(new string[] {
+                        "2"});
+            table4.AddRow(new string[] {
+                        "Fizz"});
+            table4.AddRow(new string[] {
+                        "4"});
+            table4.AddRow(new string[] {
+                        "Buzz"});
+            table4.AddRow(new string[] {
+                        "Fizz"});
+            table4.AddRow(new string[] {
+                        "7"});
+            table4.AddRow(new string[] {
+                        "8"});
+            table4.AddRow(new string[] {
+                        "Fizz"});
+            table4.AddRow(new string[] {
+                        "Buzz"});
+            table4.AddRow(new string[] {
+                        "11"});
+            table4.AddRow(new string[] {
+                        "Fizz"});
+            table4.AddRow(new string[] {
+                        "13"});
+            table4.AddRow(new string[] {
+                        "14"});
+            table4.AddRow(new string[] {
+                        "FizzBuzz"});
+#line 35
+ testRunner.Then("結果為", ((string)(null)), table4, "那麼");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
