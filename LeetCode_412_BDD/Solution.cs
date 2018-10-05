@@ -36,21 +36,18 @@ namespace LeetCode_412_BDD
         public IList<string> FizzBuzz(int num)
         {
             var result = new string[num];
+            var data = new Dictionary<int, string> { { 3, "Fizz" }, { 5, "Buzz" }, { 15, "FizzBuzz" } };
+
             for (var i = 0; i < num; i++)
             {
-                var tmp = string.Empty;
-                var currectNumber = i + 1;
-
-                if (currectNumber % 3 == 0)
-                    tmp = "Fizz";
-
-                if (currectNumber % 5 == 0)
-                    tmp += "Buzz";
-
-                if (tmp == string.Empty)
-                    tmp = currectNumber.ToString();
-
-                result[i] = tmp;
+                result[i] = (i + 1).ToString();
+                foreach (var keyNum in data)
+                {
+                    if ((i + 1) % keyNum.Key == 0)
+                    {
+                        result[i] = keyNum.Value;
+                    }
+                }
             }
             return result;
         }
